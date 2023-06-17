@@ -100,18 +100,18 @@ function MainScreen() {
         <Track>
           <Content>&nbsp;
           Воплощаю ваши идеи в 
-            <ItalicContent>реальность.</ItalicContent> 
+            <ItalicContent> реальность.</ItalicContent> 
           Оформление
             <GrayContent> соц. сетей, </GrayContent> 
            разработка 
-            <GrayContent>лендингов </GrayContent> 
+            <GrayContent> лендингов </GrayContent> 
            под ключ.
           Воплощаю ваши идеи в 
-            <ItalicContent>реальность.</ItalicContent>
+            <ItalicContent> реальность.</ItalicContent>
            Оформление
             <GrayContent> соц. сетей, </GrayContent>
            разработка 
-            <GrayContent>лендингов </GrayContent> 
+            <GrayContent> лендингов </GrayContent> 
             под ключ.
           </Content>
         </Track>

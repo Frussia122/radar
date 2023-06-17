@@ -54,16 +54,14 @@ const Button = styled.button`
     align-items: center;
     justify-content: center;
 
-    &:hover{
-        background-color: black;
-        color: white;
-
-    }
+   &:hover{
+    background-color: #08c;
+   }
 
     @media(max-width: 768px) {
         padding: 69px 0;
         font-size: 15px;
-       margin-top: 10px;
+        margin-top: 10px;
     }
 `;
 
@@ -83,7 +81,7 @@ function Communication() {
           </Button>
         </ButtonItem>
         <ButtonItem>
-          <Button>
+          <Button className="blue">
             <a target="__blank" 
               href="https://vk.com/raaadar">
             VK 

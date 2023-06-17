@@ -121,3 +121,9 @@ a{
   text-decoration: none;
   color: inherit;
 }
+.blue:hover{
+  background-color: #07f !important;
+}
+section{
+  scroll-behavior: smooth; 
+}
