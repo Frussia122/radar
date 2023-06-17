@@ -127,3 +127,6 @@ a{
 section{
   scroll-behavior: smooth; 
 }
+button {
+  color: black !important;
+}
