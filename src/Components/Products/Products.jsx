@@ -52,8 +52,8 @@ const Wrapper = styled.section`
     }
 
     @media(max-width: 550px) {
-        margin: 64px 5px;
-        padding: 32px 16px;
+        margin: 24px 8px;
+        padding: 32px 24px;
         
     }
 `;
@@ -62,7 +62,8 @@ const Head = styled.div`
     justify-content: space-between;
     align-items: center;
     @media(max-width: 550px) {
-        flex-direction: column;
+       display:block;
+        
     }
 `;
 
@@ -91,7 +92,7 @@ const SubTitle = styled.h3`
 
     @media(max-width: 550px) {
         font-size: 12px;
-        text-align: center;
+        text-align: left;
         margin-top: 10px;
     }
 `;
@@ -122,9 +123,12 @@ const WorksItem = styled.a`
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 32px;
-
+    transition: all 0.4s linear;
     @media(max-width: 550px) {
-       height: 200px;
+       height: 270px;
+    }
+    &:hover{
+        transform: translateY(-15px);
     }
 `;
 const ItemHead = styled.div`
@@ -137,6 +141,10 @@ const ItemHead = styled.div`
     @media(max-width: 680px) {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    @media(max-width: 550px) {
+      margin: 32px;
     }
 `;
 
@@ -156,7 +164,8 @@ const Name = styled.h4`
 const Categories = styled.ul`
     display: flex;
     align-items: center;
-
+    margin-top: 70px;
+    flex-wrap: wrap;
 
 `;
 
@@ -176,7 +185,8 @@ const Category = styled.li`
     }
 
     @media(max-width: 550px) {
-        
+        margin-right: 8px;
+        margin-top: 8px;
      }
 `;
 const Button = styled.button`
@@ -214,14 +224,14 @@ function Products() {
         {works.map(work => (
           <WorksItem href={work.link} style={work.styleList} key={work.name}>
         
-              <ItemHead>
-                <Name>{work.name}</Name>
-                <Categories>
-                  {work.categories.map((category, idx) => (
-                    <Category key={idx}>{category}</Category>
-                  ))}
-                </Categories>
-              </ItemHead>
+            <ItemHead>
+              <Name>{work.name}</Name>
+              <Categories>
+                {work.categories.map((category, idx) => (
+                  <Category key={idx}>{category}</Category>
+                ))}
+              </Categories>
+            </ItemHead>
           
           </WorksItem>
         ))}

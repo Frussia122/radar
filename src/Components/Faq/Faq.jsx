@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from './faq.jpg';
+import background from './faqIcon.svg';
 
 const Wrapper = styled.section`
     margin: 32px;
@@ -11,7 +11,7 @@ const Wrapper = styled.section`
         gap: 16px;
     }
     @media(max-width: 550px) {
-        margin: 32px 5px;
+        margin: 16px 8px;
     }
 `;
 
@@ -21,29 +21,33 @@ const Helpers = styled.div`
     background-color: white;
     padding: 64px 64px 140px 64px;
     background-repeat: no-repeat;
+    overflow: hidden;
 
     @media(max-width: 1120px) {
         padding: 48px;
-        background-position: ;
+        height: 300px;
     }
     @media(max-width: 724px) {
         padding: 32px;
     }
 
     @media(max-width: 550px) {
-       
+       height: 300px;
     }
 `;
+
 
 const Description = styled.p`
     font-size: 36px;
     font-weight: 400;
     @media(max-width: 1120px) {
-        font-size: 17px;
+        font-size: 25px;
         line-height: 1.1;
     }
 
-    
+    @media(max-width: 724px) {
+      font-size: 21px
+   }
 `;
 
 const Title = styled.h4`
@@ -54,19 +58,30 @@ const Title = styled.h4`
         line-height: 1.1;
     }
     @media(max-width: 724px) {
-       font-size: 20px;
+       font-size: 24px;
     }
 `;
+
+const FaqImg = styled.img`
+  position: absolute;
+  right:0;
+  bottom: 0;
+
+  @media(max-width: 500px) {
+    right: -90px;
+  }
+`
 function Faq() {
   return (
     <Wrapper>
       <Helpers style={{
-        backgroundImage: `url(${background})`,
+        position: 'relative',
       }}>
         <Title>
             Чем я могу <span style={{
             textDecoration: 'underline',
           }}>вам</span> помочь?
+          <FaqImg src={background}></FaqImg>
         </Title>
        
       </Helpers>

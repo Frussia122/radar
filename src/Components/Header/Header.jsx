@@ -12,13 +12,14 @@ const Wrapper = styled.header`
     align-items: center;
     justify-content: space-between;
     @media (max-width: 768px) {
-      margin: 0 0 22px 0;
-      border-radius: 0;
+      margin: 8px;
+      padding:16px 24px;
+      margin-bottom: 32px;
     }
 
 
-    @media (max-width: 440px) {
-      padding: 32px 20px;
+    @media (max-width: 600px) {
+      
     }
 `;
 const Logo = styled.img`
@@ -42,7 +43,7 @@ const NavItem = styled.li`
        color:gray;
     }
     @media(max-width: 535px) {
-        margin-left: 10px;
+        margin-right: 0px;
     }
 
     @media (max-width: 440px) {

@@ -80,7 +80,7 @@ table {
   background-color: white;
   border-radius: 32px;
   padding: 32px 64px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .head{
   display: flex;
@@ -109,7 +109,7 @@ table {
 
 @media (max-width: 610px) {
   .szh-accordion__item {
-    padding :15px 15px;
+    padding :24px;
   }
   .szh-accordion__item-panel{
     font-size: 12px;

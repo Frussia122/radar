@@ -6,7 +6,7 @@ const Wrapper = styled.section`
   margin: 32px;
 
   @media(max-width: 550px) {
-    margin: 32px 5px 0 5px;
+    margin: 16px 8px 0 8px;
   }
 `;
 
@@ -92,9 +92,11 @@ const Head = styled.div`
     justify-content: space-between;
     align-items: center;
     @media(max-width: 660px) {
+        margin-bottom: 8px;
         flex-direction: column;
-        padding: 32px;
-        text-align: center;
+        padding: 25px;
+        align-items: flex-start;
+       
     }
 `;
 
@@ -123,7 +125,7 @@ const SubTitle = styled.h3`
 
     @media(max-width: 550px) {
         font-size: 12px;
-        text-align: center;
+        text-align: left;
         margin-top: 10px;
     }
 `;

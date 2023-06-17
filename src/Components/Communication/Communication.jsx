@@ -61,8 +61,9 @@ const Button = styled.button`
     }
 
     @media(max-width: 768px) {
-        padding: 24px 0;
+        padding: 69px 0;
         font-size: 15px;
+       margin-top: 10px;
     }
 `;
 

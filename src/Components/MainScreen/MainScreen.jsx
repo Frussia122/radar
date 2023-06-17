@@ -48,6 +48,7 @@ const SubTitle = styled.h2`
     @media(max-width: 584px) {
         text-align: center;
         font-size: 20px;
+        max-width: 359px;
     }
 
 `;
@@ -73,7 +74,7 @@ const Button = styled.button`
 
     @media(max-width: 584px) {
         padding: 18px 0;
-        width: 340px;
+        width: 310px;
     }
 `;
 
