@@ -14,7 +14,7 @@ const Marquee = styled.div`
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: 140px;
+    height: 141px;
     overflow-x: hidden;
 
     @media(max-width: 584px) {
@@ -79,8 +79,18 @@ const Button = styled.button`
 
 const Link = styled.a`
     text-decoration: none;
-    color: inherit;
+    color: inherit; 
 `;
+
+
+const GrayContent = styled.span`
+    color: gray; 
+`;
+
+const ItalicContent = styled.span`
+    font-style: italic; !important
+`;
+
 function MainScreen() {
  
   return (   
@@ -88,8 +98,20 @@ function MainScreen() {
       <Marquee>
         <Track>
           <Content>&nbsp;
-          Воплощаю ваши идеи в реальность. Оформление соц. сетей, разработка лендингов под ключ.
-          Воплощаю ваши идеи в реальность. Оформление соц. сетей, разработка лендингов под ключ.
+          Воплощаю ваши идеи в 
+            <ItalicContent>реальность.</ItalicContent> 
+          Оформление
+            <GrayContent> соц. сетей, </GrayContent> 
+           разработка 
+            <GrayContent>лендингов </GrayContent> 
+           под ключ.
+          Воплощаю ваши идеи в 
+            <ItalicContent>реальность.</ItalicContent>
+           Оформление
+            <GrayContent> соц. сетей, </GrayContent>
+           разработка 
+            <GrayContent>лендингов </GrayContent> 
+            под ключ.
           </Content>
         </Track>
       </Marquee>

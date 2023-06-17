@@ -8,7 +8,8 @@ const Title = styled.div`
     font-size: 20px;
     line-height: 120%;
     text-align: center;
-    margin-bottom: 32px;
+    margin: 32px 0;
+    
 `;
 
 const Link = styled.a`

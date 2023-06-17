@@ -47,7 +47,7 @@ const Description = styled.p`
 `;
 
 const Title = styled.h4`
-    font-wight: 700;
+    font-weight: 700;
     font-size: 48px;
     @media(max-width: 1120px) {
         font-size: 36px;

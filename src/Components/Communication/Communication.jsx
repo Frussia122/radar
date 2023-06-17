@@ -1,4 +1,7 @@
 import styled from 'styled-components'
+import telegram from './telega.svg';
+import vk from './vk.svg';
+
 
 const Wrapper = styled.section`
     background-color: white;
@@ -47,6 +50,9 @@ const Button = styled.button`
     line-height: 120%;
     cursor: pointer;
     transition: all 0.2s linear;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover{
         background-color: black;
@@ -72,14 +78,16 @@ function Communication() {
             <a target="__blank" href="https://t.me/radar000">
                 Telegram
             </a>
+            <img src={telegram} alt="" />
           </Button>
         </ButtonItem>
         <ButtonItem>
           <Button>
             <a target="__blank" 
               href="https://vk.com/raaadar">
-            VK
+            VK 
             </a>
+            <img src={vk} alt="" />
           </Button>
         </ButtonItem>
       </ButtonsList>

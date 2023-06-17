@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import logo from './logo.svg';
 
+
+
 const Wrapper = styled.header`
     background-color: white;
     border-radius: 32px;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Intranet from './Intranet.jpg';
 import Melonity from './Melonity.jpg';
 import Ocw from './Ocw.jpg';
+import dropfile from './dprofile.svg';
 
 const works = [
   {
@@ -12,6 +13,7 @@ const works = [
       backgroundImage: `url(${Intranet})`,
       color: 'white',
     },
+    link: 'https://dprofile.ru/case/16608/lending-intranetboy',
 
   },
   {
@@ -22,15 +24,17 @@ const works = [
       backgroundImage: `url(${Melonity})`,
       color: 'black',
     },
+    link: 'https://dprofile.ru/case/14670/pervyi-ekran-saita-melonitygg',
   },
   {
-    name: 'Ocw',
+    name: 'OCW',
     categories: ['ui/ux', 'web', 'corp style' ],
     styleList: { 
       gridColumn: 'span 1',
       backgroundImage: `url(${Ocw})`,
       color: 'black',
     },
+    link: 'https://dprofile.ru/case/14669/lending-i-aidentika-ourcarwash',
   },
 ];
 
@@ -111,7 +115,8 @@ const WorksList = styled.ul`
     }
 `;
 
-const WorksItem = styled.li`
+const WorksItem = styled.a`
+    cursor: pointer;
     height: 270px;
     width:100%;
     background-size: cover;
@@ -191,6 +196,9 @@ const Button = styled.button`
         border: 1px solid #fe5639;
         background-color: #fe5639;
     }
+    @media(max-width: 768px) {
+        font-size: 18px;
+    }
 `;
 
 function Products() {
@@ -204,19 +212,24 @@ function Products() {
 
       <WorksList>
         {works.map(work => (
-          <WorksItem style={work.styleList} key={work.name}>
-            <ItemHead>
-              <Name>{work.name}</Name>
-              <Categories>
-                {work.categories.map((category, idx) => (
-                  <Category key={idx}>{category}</Category>
-                ))}
-              </Categories>
-            </ItemHead>
+          <WorksItem href={work.link} style={work.styleList} key={work.name}>
+        
+              <ItemHead>
+                <Name>{work.name}</Name>
+                <Categories>
+                  {work.categories.map((category, idx) => (
+                    <Category key={idx}>{category}</Category>
+                  ))}
+                </Categories>
+              </ItemHead>
+          
           </WorksItem>
         ))}
-      </WorksList>
-      <Button>Все мои работы на Dprofile</Button>
+      </WorksList> 
+     
+      <Button>
+        <a href="https://dprofile.ru/radar">Все мои работы на Dprofile <img src={dropfile} alt="" /></a>
+      </Button>
     </Wrapper>
   );
 }
