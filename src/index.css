@@ -6,7 +6,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #F1F1F1;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -35,6 +34,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  scroll-behavior: smooth; 
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -124,9 +125,7 @@ a{
 .blue:hover{
   background-color: #07f !important;
 }
-section{
-  scroll-behavior: smooth; 
-}
+
 button {
   color: black !important;
 }
